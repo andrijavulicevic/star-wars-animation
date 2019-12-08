@@ -88,10 +88,8 @@
 
     <script>
       window.onload = function(e) {
-        console.log("window.onload", e);
         const allLines = document.querySelectorAll("#content div");
         for (const line of allLines) {
-          console.log(line.innerHTML);
           let newContent = ``;
           const letters = line.innerHTML.trim().split("");
           for (const letter of letters) {
